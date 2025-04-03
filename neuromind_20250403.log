@@ -1,0 +1,137 @@
+2025-04-03 22:55:46,816 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 22:55:46,817 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 22:55:46,817 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 22:55:46,818 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 22:55:52,982 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 22:55:52,984 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 22:55:55,084 - neuromind - INFO - logging.py:44 - Added new memory with ID 1
+2025-04-03 22:56:18,650 - neuromind - INFO - logging.py:44 - Added new memory with ID 2
+2025-04-03 22:56:19,958 - neuromind - INFO - logging.py:44 - Added new memory with ID 3
+2025-04-03 22:56:21,608 - neuromind - INFO - logging.py:44 - Added new memory with ID 4
+2025-04-03 22:56:45,228 - neuromind - INFO - logging.py:44 - Added new memory with ID 5
+2025-04-03 22:56:54,296 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 22:57:45,085 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 22:58:12,379 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 22:58:18,347 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 22:58:46,060 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 22:58:46,066 - neuromind - INFO - logging.py:44 - Compressed 0 memories
+2025-04-03 22:58:46,066 - neuromind - INFO - logging.py:44 - Completed memory compression
+2025-04-03 22:58:46,067 - neuromind - INFO - logging.py:44 - Completed memory compression
+2025-04-03 22:59:36,040 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:00:29,202 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:00:29,203 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:00:29,204 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:00:29,204 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:00:33,936 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:00:33,937 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:01:12,529 - neuromind - ERROR - logging.py:52 - Error retrieving memories
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\memory\hybrid_storage.py", line 126, in retrieve
+    memory_ids = [self.vector_ids[i] for i in indices[0]]
+                  ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-04-03 23:01:12,532 - neuromind - ERROR - logging.py:52 - Error retrieving context
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\memory_agent.py", line 72, in retrieve_context
+    memories = self.storage.retrieve(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\memory\hybrid_storage.py", line 126, in retrieve
+    memory_ids = [self.vector_ids[i] for i in indices[0]]
+                  ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-04-03 23:01:12,533 - neuromind - ERROR - logging.py:52 - Error processing message
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\neuromind_agent.py", line 42, in process_message
+    context = self.memory_agent.retrieve_context(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\memory_agent.py", line 72, in retrieve_context
+    memories = self.storage.retrieve(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\memory\hybrid_storage.py", line 126, in retrieve
+    memory_ids = [self.vector_ids[i] for i in indices[0]]
+                  ~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2025-04-03 23:03:12,833 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:03:12,834 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:03:12,835 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:03:12,835 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:03:17,414 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:03:17,415 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:03:34,417 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:04:09,315 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:04:29,462 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:04:29,463 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:04:29,464 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:04:29,464 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:04:32,570 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:04:32,571 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:05:28,030 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:15:26,104 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:15:26,105 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:15:26,105 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:15:26,107 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:15:36,442 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:15:36,443 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:15:53,273 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:16:49,998 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:17:23,370 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:17:23,371 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:17:23,371 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:17:23,372 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:17:26,456 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:17:26,457 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:18:33,926 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:19:41,627 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:20:17,401 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:23:20,728 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:27:21,622 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:27:21,623 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:27:21,623 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:27:21,623 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:27:31,467 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:27:31,468 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:27:54,462 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:29:11,825 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:30:26,116 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:32:57,733 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:34:59,029 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:35:17,905 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:35:17,906 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:35:17,907 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:35:17,907 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:35:25,122 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:35:25,123 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:36:23,410 - neuromind - INFO - logging.py:44 - Processed message and generated response
+2025-04-03 23:38:36,644 - neuromind - INFO - logging.py:44 - Initialized SQLite database tables
+2025-04-03 23:38:36,645 - neuromind - INFO - logging.py:44 - Initialized hybrid memory storage with dimension 1536
+2025-04-03 23:38:36,645 - neuromind - INFO - logging.py:44 - Initialized MemoryAgent
+2025-04-03 23:38:36,645 - neuromind - INFO - logging.py:44 - Initialized llama3-70b-8192 adapter
+2025-04-03 23:38:48,726 - neuromind - INFO - logging.py:44 - Initialized ActionAgent with llama3-70b-8192
+2025-04-03 23:38:48,726 - neuromind - INFO - logging.py:44 - Initialized NeuromindAgent
+2025-04-03 23:38:58,846 - neuromind - ERROR - logging.py:52 - Error generating Groq embedding
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\action_agent.py", line 72, in generate_embedding
+    embedding_values = [float(x.strip()) for x in embedding_str.split(',')]
+                        ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Here is the dense vector representation of the text "what is html":\n\n-0.034'
+2025-04-03 23:38:58,851 - neuromind - ERROR - logging.py:52 - Error generating embedding
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\action_agent.py", line 163, in generate_embedding
+    return self.adapter.generate_embedding(text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\action_agent.py", line 72, in generate_embedding
+    embedding_values = [float(x.strip()) for x in embedding_str.split(',')]
+                        ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Here is the dense vector representation of the text "what is html":\n\n-0.034'
+2025-04-03 23:38:58,853 - neuromind - ERROR - logging.py:52 - Error processing message
+Traceback (most recent call last):
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\neuromind_agent.py", line 39, in process_message
+    embedding = self.action_agent.generate_embedding(message)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\action_agent.py", line 163, in generate_embedding
+    return self.adapter.generate_embedding(text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\project1\ai_agent_v1\langmemagent\neuromind_framework\src\neuromind\core\agents\action_agent.py", line 72, in generate_embedding
+    embedding_values = [float(x.strip()) for x in embedding_str.split(',')]
+                        ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'Here is the dense vector representation of the text "what is html":\n\n-0.034'

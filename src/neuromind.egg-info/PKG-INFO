@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: neuromind
+Version: 0.1.0
+Summary: A powerful framework for building AI agents with advanced memory capabilities
+Home-page: https://github.com/yourusername/neuromind-framework
+Author: Your Name
+Author-email: your.email@example.com
+Project-URL: Bug Reports, https://github.com/yourusername/neuromind-framework/issues
+Project-URL: Source, https://github.com/yourusername/neuromind-framework
+Project-URL: Documentation, https://github.com/yourusername/neuromind-framework/docs
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: faiss-cpu>=1.7.0
+Requires-Dist: groq>=0.3.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: loguru>=0.5.3
+Requires-Dist: langchain-core>=0.1.0
+Requires-Dist: langchain-community>=0.0.10
+Requires-Dist: langchain-groq>=0.1.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: rich>=10.0.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: black>=22.0.0
+Requires-Dist: isort>=5.0.0
+Requires-Dist: mypy>=0.900
+
+# Neuromind Framework
+
+A powerful framework for building AI agents with advanced memory capabilities.
+
+## Features
+
+- Hybrid memory storage (FAISS + SQLite)
+- Memory compression and importance tracking
+- Extensible model adapter system
+- Comprehensive logging
+- Easy-to-use API
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/neuromind-framework.git
+cd neuromind-framework
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Set up your OpenAI API key:
+
+```bash
+export OPENAI_API_KEY=your_api_key_here
+```
+
+## Quick Start
+
+Run the example script to test the framework:
+
+```bash
+python examples/simple_test.py
+```
+
+## Basic Usage
+
+```python
+from neuromind.core.agents import NeuromindAgent
+
+# Initialize the agent
+agent = NeuromindAgent(
+    db_path="memories.db",
+    model_adapter="openai"
+)
+
+# Add a memory
+memory_id = agent.add_memory(
+    content="Python is a great programming language",
+    memory_type="fact",
+    importance=0.9
+)
+
+# Process a message
+response = agent.process_message("Tell me about Python")
+print(response)
+```
+
+## Documentation
+
+For detailed documentation, please refer to the `docs/` directory.
+
+## License
+
+MIT License

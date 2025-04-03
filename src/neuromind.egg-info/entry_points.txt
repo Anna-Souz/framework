@@ -1,0 +1,2 @@
+[console_scripts]
+neuromind = neuromind.cli:main
