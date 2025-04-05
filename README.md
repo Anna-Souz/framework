@@ -1,4 +1,5 @@
 # Neuromind Framework
+![NeuroMind](https://github.com/user-attachments/assets/4eaef193-37b2-4a0d-9673-153e08fc3a5b)
 
 A powerful framework for building AI agents with advanced memory capabilities.
 
